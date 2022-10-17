@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> YoungestCharity </title>
+    <meta name="description" content= "YoungestCharity">
+    <meta property="og:image" content="/img/other_tag.jpg">
+    <link rel="stylesheet" href="css/css-style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="icon" href="./icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+
+                    <div class="header__logo">
+                        <img src="images/img-logo.png" alt="logo site">
+                    </div>
+
+                    <div class="header__center">
+                        <a href="https://etherscan.io/address/YoungestCharity" target="_blank" class="head-etherscan"></a>
+                        <a href="https://opensea.io/collection/YoungestCharity" target="_blank" class="head-opensea"></a>
+                        <a href="https://twitter.com/YoungestCharity" target="_blank" class="head-twitter"></a>
+                        <a href="https://discord.gg/YoungestCharity" target="_blank" class="head-discord"></a>
+                    </div>
+
+                    <div class="header__right">                        
+                        <button class="btn-head" id="connect_button"> Connect wallet </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__left">
+
+                        <p class="form-text"> TOTAL MINTED </p> 
+                        <p class="number" id="tokens_available"> CONNECT </p> 
+                        <p class="form-text" id="phase"> YoungestCharity </p> 
+                        <p class="form-text" id="price"> MINT FREE </p> <br>
+                        
+                        <div class="form-row">
+
+                            <div class="form-row-amount">
+                                <button class="btn-2" id="mintDW" onClick="decrementMintAmount()"> - </button>
+                                    <input type="text" placeholder="mint amount" class="in-form js-in-number" id="tokens_amount">
+                                <button class="btn-2" id="mintUP" onClick="incrementMintAmount()"> + </button>
+                            </div>
+
+                            <div class="form-row-mint">
+                                <button class="btn-form" id="mint_button"> Mint </button>
+                            </div>
+
+                        </div><br>
+                            
+                        <div class="form-row-text">
+                            <div class="form-text">                        
+                                <p> This NFT is a fundraiser that goes towards the Gustave Roussy foundation, one of the largest French hospitals, for the purpose of fighting against cancer and was organised on behalf of TheYoungest.eth </p>
+                                <br>
+                                <p> It's a 3103 collection size with 5 Nft per tx, unlimited per wallet as I want that everyone donate as many as they want. The mint price is 0.01 ETH per nft. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main__right"> <img src="images/GR.png"> </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+	<script src="js/dist-web3.min.js"></script>
+    <script src="js/7663-js-sale.js"></script>
+    <script src="js/8305-js-main.js"></script></body>
+
+</html>
